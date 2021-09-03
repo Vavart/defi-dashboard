@@ -37,7 +37,7 @@ body {
   background: #f1f1f1;
   color: #fff;
   position: relative;
-  font-family: "Baloo 2", cursive;
+  font-family: "Baloo 2", sans-serif;
 }
 
 .dashboard {
@@ -85,6 +85,7 @@ main {
   .dashboard {
     height: auto;
     margin: 0px auto;
+    border-radius: 0;
   }
 
   main {
@@ -174,7 +175,7 @@ header {
 }
 
 header h1 {
-  font-family: "Baloo 2", cursive;
+  font-family: "Baloo 2", sans-serif;
   font-size: 55px;
   font-weight: 700;
 }
@@ -214,6 +215,14 @@ header button:last-child {
   header h1 {
     text-align: center;
     margin-bottom: 10px;
+  }
+
+  header button {
+    margin: 0 15px 0 0;
+  }
+
+  header button:last-child {
+    margin: 0;
   }
 }
 .showcase-game h3 {
