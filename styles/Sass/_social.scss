@@ -18,6 +18,17 @@
     cursor: pointer;
 }
 
+.user-talk:nth-child(1) img {
+    border: 3px solid green;
+}
+.user-talk:nth-child(2) img {
+    border: 3px solid lightcyan;
+}
+
+.user-talk:nth-child(3) img {
+    border: 3px solid $gray;
+}
+
 .user-talk .pic img {
     width: 80px;
     border-radius: 50%
