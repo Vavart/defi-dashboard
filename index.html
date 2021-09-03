@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard JS</title>
+
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+<body>
+    
+    <!-- Container principal -->
+    <div class="dashboard">
+        
+        <!-- Sidenav -->
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/LOGO-ICO.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-toggle">
+                <button class="menu-toggle-btn">
+                    <img src="assets/MENU-ICO.svg" alt="menu icon">
+                </button>
+            </div>
+
+            <div class="menu-nav">
+
+                <div class="menu-nav-img">
+                    <a href="#">
+                        <img src="assets/HOME-ICO.svg" alt="home icon">
+                    </a>
+                </div>
+
+                <div class="menu-nav-img">
+                    <a href="#">
+                        <img src="assets/SOCIAL-ICO.svg" alt="social icon">
+                    </a>
+                </div>
+
+                <div class="menu-nav-img">
+                    <a href="#">
+                        <img src="assets/STORE-ICO.svg" alt="store icon">
+                    </a>
+                </div>
+                <div class="menu-nav-img">
+                    <a href="#">
+                        <img src="assets/GAMES-ICO.svg" alt="games icon">
+                    </a>
+                </div>
+                
+                <div class="menu-nav-img">
+                    <a href="#">
+                        <img src="assets/SIGNOUT-ICO.svg" alt="log out icon">
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Top Header -->
+        <header>
+            <h1>Welcome back John !</h1>
+            <div class="cont-btns">
+                <button>
+                    <img src="assets/BELL-ICO.svg" alt="bell icon">
+                </button>
+
+                <button>
+                    <img src="assets/AVATAR-ICO.svg" alt="avatar icon">
+                </button>
+            </div>
+        </header>
+
+
+        <!-- Grille Principale -->
+        <main>
+
+            <!-- SHOWCASE GAME -->
+            <div class="showcase-game">
+                <h3>What's new ?</h3>
+
+                <div class="showcase">
+                    <div class="left-info">
+                        <p class="text-warning">NEW !</p>
+                        <p class="text-info">Based on the games you play</p>
+
+                        <div class="cont-tags">
+                            <div class="tag"><span>RPG</span></div>
+                            <div class="tag"><span>Open World</span></div>
+                            <div class="tag"><span>FPS</span></div>
+                            <div class="tag"><span>Futuristic</span></div>
+                        </div>
+
+                        <div class="game-title">
+                            <img src="assets/cyberpunkTitle.png" alt="game  title">
+                        </div>
+
+                        <div class="cont-cta-btns">
+                            <button>Store page</button>
+                            <button>Purchase</button>
+                        </div>
+                    </div>
+
+                    <div class="right-pic">
+                        <img src="assets/cyberpunkThumbnail.png" alt="game thumbnail">
+                    </div>
+                </div>
+            </div>
+
+            <!-- RECENT ACTIVITY -->
+            <div class="recent-activity">
+                <h3>Recent Activity</h3>
+                <div class="canvas-container">
+                    <canvas id="myChart">
+                        Votre navigateur ne prend pas en compte le Canvas
+                    </canvas>
+                </div>
+            </div>
+
+            <!-- RECENT GAME -->
+            <div class="recent-game">
+                <h3>Last played</h3>
+
+                <div class="cont-recent-game">
+                    <div class="game">
+                        <div class="pic">
+                            <img src="assets/FarCry5.png" alt="game thumbnail">
+                        </div>
+                        <p class="hours-played">55 hrs</p>
+                    </div>     
+                </div>
+
+                <button class="view-library">
+                    View library
+                </button>
+            </div>
+
+            <!-- SOCIAL -->
+            <div class="social">
+                <h3>Social</h3>
+
+                <div class="cont-social">
+                    <div class="user-talk">
+                        <div class="pic">
+                            <img src="assets/avatar1.png" alt="user avatar">
+                        </div>
+
+                        <div class="text">
+                            <p class="name">Devon Lane <span class="status">(Online)</span></p>
+                            <p class="last-message">Works for me!</p>
+                        </div>
+                    </div>
+
+                    <div class="user-talk">
+                        <div class="pic">
+                            <img src="assets/avatar2.png" alt="user avatar">
+                        </div>
+
+                        <div class="text">
+                            <p class="name">Guy Hawkins <span class="status">(FarCry 5)</span></p>
+                            <p class="last-message"><strong>Invited you to play a game !</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="user-talk">
+                        <div class="pic">
+                            <img src="assets/avatar3.png" alt="user avatar">
+                        </div>
+
+                        <div class="text">
+                            <p class="name">Esther Howard <span class="status">(Offline)</span></p>
+                            <p class="last-message">See ya!</p>
+                        </div>
+                    </div>
+
+                    <button class="view-all">
+                        See all friends
+                    </button>
+                </div>
+            </div>
+        </main>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

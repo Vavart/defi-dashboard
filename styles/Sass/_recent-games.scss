@@ -1,0 +1,32 @@
+.recent-game {
+    margin-left: 10px;
+    height: 100%;
+}
+.recent-game h3 {
+    @extend %title;
+    margin-bottom: 20px;
+}
+
+
+.cont-recent-game .game {
+    width: 225px;
+}
+
+.game .pic img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.game .hours-played {
+    margin: 5px 0 10px;
+    font-size: 18px;
+    color: $gray;
+}
+
+.recent-game button {
+    display: block;
+    width: 100%;
+    @extend %btn-cta;
+    background: transparent;
+}
+

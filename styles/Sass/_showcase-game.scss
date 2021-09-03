@@ -1,0 +1,109 @@
+.showcase-game h3 {
+    @extend %title;
+    margin-bottom: 30px;
+}
+
+.showcase {
+    position: relative;
+    background: linear-gradient(256.78deg, #333333 -18.15%, #222222 102.84%);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showcase .text-warning {
+    color: #D43232;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.showcase .text-info {
+    font-size: 22px;
+    margin: 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    color: lighten($color: $gray, $amount: 30);
+}
+
+.cont-tags {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    font-weight: 700;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin: 10px 5px 0 0;
+}
+
+.game-title {
+    margin: 20px 0;
+}
+
+.game-title img {
+    width: 320px;
+}
+
+
+
+.cont-cta-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-cta-btns button {
+    @extend %btn-cta
+}
+
+.cont-cta-btns button:first-child {
+    border: none;
+}
+
+.cont-cta-btns button:last-child {
+    background: transparent;
+
+    &:hover {
+        background-color: lighten($color: $blue, $amount: 5);
+    }
+}
+
+.right-pic {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.right-pic img {
+    width: clamp(100px, 35vw, 400px);
+}
+
+@media screen and (max-width: 1150px) {
+    .right-pic img {
+        width: 27vw;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .right-pic img {
+        width: clamp(100px, 35vw, 400px);
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .showcase {
+        padding: 5px;
+    }
+
+    .game-title img {
+        width: 270px;
+    }
+    
+    .right-pic {
+        display: none;
+    }
+}

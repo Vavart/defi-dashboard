@@ -1,0 +1,16 @@
+.recent-activity h3 {
+    @extend %title;
+    margin-bottom: 20px;
+}
+
+.canvas-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+@media screen and (max-width: 950px) {
+    .canvas-container {
+        height: 300px;
+    }
+}

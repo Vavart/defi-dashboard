@@ -1,0 +1,58 @@
+header {
+    position: relative;
+    top: 0;
+    margin-left: 100px;
+    padding: 30px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+header button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+header button:last-child {
+    margin: 0;
+}
+
+@media screen and (max-width: 1260px) {
+    header {
+        margin-left: 0px;
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header h1 {
+        font-size: 40px;
+    
+    }
+
+    header img {
+        width: 35px;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

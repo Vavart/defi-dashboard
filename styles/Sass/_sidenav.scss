@@ -1,0 +1,79 @@
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100px;
+    border-right: 1px solid $gray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+    z-index: 15;
+}
+
+nav.active {
+    transform: translateX(0%);
+}
+
+nav .logo {
+    width: 100%;
+    @extend %flex-center;
+    padding: 30px 15px;
+
+}
+
+.menu-toggle {
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100px;
+
+    @extend %flex-center;
+    background: #444;
+    padding: 10px 5px 5px;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle-btn {
+    background: none;
+    border: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.menu-nav {
+    margin-bottom: 100px;
+    
+}
+
+.menu-nav-img {
+    width: 100%;
+    @extend %flex-center;
+    padding: 20px 15px;
+    margin: 10px 0;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.menu-nav-img:hover {
+    background: $gray;
+}
+
+
+@media screen and (max-width: 1260px) {
+    nav {
+        transform: translateX(-100%);
+        background: #555;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

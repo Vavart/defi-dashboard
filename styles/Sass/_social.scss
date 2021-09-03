@@ -1,0 +1,74 @@
+.social h3 {
+    @extend %title;
+    margin: 0 0 20px 10px;
+}
+
+.cont-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+.user-talk {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.user-talk .pic img {
+    width: 80px;
+    border-radius: 50%
+}
+
+.user-talk .text {
+    margin-left: 15px;
+    height: 100%;
+    padding: 5px 0;
+}
+
+.text .name {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.text .name .status {
+    font-size: 20px;
+}
+
+.text .last-message {
+    font-size: 20px;
+    color: $gray;
+}
+
+.text .last-message strong {
+    font-weight: 700;
+}
+
+
+.social button {
+    display: block;
+    margin-top: auto;
+    @extend %btn-cta;
+    background: transparent;
+    position: relative;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1260px) {
+    .social h3 {
+        margin: 0 0 20px 0px;
+    }
+
+    .cont-social {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .user-talk {
+        margin-bottom: 50px;
+    }
+}
