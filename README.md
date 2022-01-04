@@ -1,4 +1,4 @@
-# Défi Dashboard!
-Nouveau défi du Repaire du Web, ici un dashboard gaming responsive!
+# Dashboard Challenge !
+New challenge from "Le Repaire du Web" discord.
 
---> Dispo [ici](https://vavart.github.io/defi-dashboard/) !
+--> Available [here](https://vavart.github.io/defi-dashboard/) !
